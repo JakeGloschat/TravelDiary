@@ -13,7 +13,7 @@ class Entry {
     let entryDate: Date
     let body: String
     
-    init(title: String, address: String, entryDate: Date, body: String)
+    init(title: String, address: String, entryDate: Date, body: String) {
     self.title = title
     self.address = address
     self.entryDate = entryDate
