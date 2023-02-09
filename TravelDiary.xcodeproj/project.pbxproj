@@ -73,6 +73,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		23AE210429956CF500BD89FA /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23AE210229955B2C00BD89FA /* EntryController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
 		413AA7E42724B792008D6631 = {
 			isa = PBXGroup;
 			children = (
@@ -93,11 +101,11 @@
 			isa = PBXGroup;
 			children = (
 				23AE210129955A9A00BD89FA /* Model */,
+				23AE210429956CF500BD89FA /* Model Controller */,
 				231F3BE72995514600559E5C /* View Controllers */,
 				413AA81327273B5A008D6631 /* Helper Files */,
 				413AA80527271158008D6631 /* Resources */,
 				413AA80427271142008D6631 /* Storyboards */,
-				23AE210229955B2C00BD89FA /* EntryController.swift */,
 			);
 			path = TravelDiary;
 			sourceTree = "<group>";
