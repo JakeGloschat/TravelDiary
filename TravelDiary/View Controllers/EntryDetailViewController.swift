@@ -18,7 +18,19 @@ class EntryDetailViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        updateView()
+    }
+    
+    // MARK: - Properties
+    var entryReciever: Entry?
+    
+    // MARK: - Helper Functions
+    func updateView() {
+        guard let entryReciever = entryReciever else {return}
+        entryTitleTextField.text = entryReciever.title
+        entryAddressTextField.text = entryReciever.address
+        entryDateLabel.text = entryReciever.entryDate.stringValue()
+        entryBodyTextView.text = entryReciever.body
     }
     
     // MARK: - Actions

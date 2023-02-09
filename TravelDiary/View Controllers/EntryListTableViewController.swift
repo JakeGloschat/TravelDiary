@@ -54,8 +54,21 @@ class EntryListTableViewController: UITableViewController {
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+      // IIDOO
+        
+        if segue.identifier == "toDetailVC" {
+            // What cell?
+            if let indexPath = tableView.indexPathForSelectedRow {
+                // What destination
+                if let destinationVC = segue.destination as? EntryDetailViewController {
+                    // object to send
+                    let entryToSend = EntryController.sharedInstance.entries[indexPath.row]
+                    //object to recieve
+                    destinationVC.entryReciever = entryToSend
+                }
+            }
+        }
+        
     }
     
     
