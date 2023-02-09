@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		231F3BE229954F9100559E5C /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231F3BE129954F9100559E5C /* EntryListTableViewController.swift */; };
+		231F3BE429954FF700559E5C /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231F3BE329954FF700559E5C /* EntryDetailViewController.swift */; };
+		231F3BE62995505000559E5C /* EntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231F3BE52995505000559E5C /* EntryTableViewCell.swift */; };
 		413AA7F12724B792008D6631 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413AA7F02724B792008D6631 /* AppDelegate.swift */; };
 		413AA7F32724B792008D6631 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413AA7F22724B792008D6631 /* SceneDelegate.swift */; };
 		413AA7F82724B792008D6631 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413AA7F62724B792008D6631 /* Main.storyboard */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		231F3BE129954F9100559E5C /* EntryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
+		231F3BE329954FF700559E5C /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
+		231F3BE52995505000559E5C /* EntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTableViewCell.swift; sourceTree = "<group>"; };
 		413AA7ED2724B792008D6631 /* TravelDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		413AA7F02724B792008D6631 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		413AA7F22724B792008D6631 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		231F3BE72995514600559E5C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				231F3BE129954F9100559E5C /* EntryListTableViewController.swift */,
+				231F3BE329954FF700559E5C /* EntryDetailViewController.swift */,
+				231F3BE82995515E00559E5C /* Custom Views */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		231F3BE82995515E00559E5C /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				231F3BE52995505000559E5C /* EntryTableViewCell.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
 		413AA7E42724B792008D6631 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +80,7 @@
 		413AA7EF2724B792008D6631 /* TravelDiary */ = {
 			isa = PBXGroup;
 			children = (
+				231F3BE72995514600559E5C /* View Controllers */,
 				413AA81327273B5A008D6631 /* Helper Files */,
 				413AA80527271158008D6631 /* Resources */,
 				413AA80427271142008D6631 /* Storyboards */,
@@ -162,8 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				231F3BE62995505000559E5C /* EntryTableViewCell.swift in Sources */,
 				413AA7F12724B792008D6631 /* AppDelegate.swift in Sources */,
 				413AA7F32724B792008D6631 /* SceneDelegate.swift in Sources */,
+				231F3BE229954F9100559E5C /* EntryListTableViewController.swift in Sources */,
+				231F3BE429954FF700559E5C /* EntryDetailViewController.swift in Sources */,
 				413AA81527273B77008D6631 /* DateHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
